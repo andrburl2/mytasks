@@ -3,11 +3,8 @@ class ProjectController < ApplicationController
 
   def  index
     projects = Project.all
- 
-    render :json => {
-      status: 200,
-      projects: projects,
-    }
+
+    render json: projects, include: ['todos']
   end
 
   def switch_complete

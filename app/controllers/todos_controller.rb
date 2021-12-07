@@ -1,8 +1,8 @@
 class TodosController < ApplicationController
   skip_before_action :verify_authenticity_token
 
-  def index   
-    if (todo_params[:project_id] == 0)
+  def index
+    if (todo_params[:project_id].to_i == 0)
       project = Project.create(title: params[:project_title])
       todo = Todo.create(todo_params)
       
