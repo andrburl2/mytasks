@@ -1,5 +1,6 @@
 {
-  "name": "mytasks",
+  "name": "my-tasks",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
@@ -10,7 +11,6 @@
     "webpack": "4.46.0",
     "webpack-cli": "3.3.12"
   },
-  "version": "0.1.0",
   "devDependencies": {
     "webpack-dev-server": "3"
   }
